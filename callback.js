@@ -1,3 +1,21 @@
+
+// var arr = [1,2,3,4];
+
+// arr.forEach(function(element, i){
+//   console.log(element, i);
+// })
+
+// The second argument/parameter is expected to be a function
+function findWaldo(arr, found) {
+arr.forEach(function (name, i){
+  if(name === "Waldo"){
+    found(i);
+  }
+
+})
+}
+
+
 // The second argument/parameter is expected to be a function
 function findWaldo(arr, found) {
   for (var i = 0; i < arr.length; i++) {
